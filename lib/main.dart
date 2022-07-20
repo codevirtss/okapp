@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(textTheme: GoogleFonts.dmSansTextTheme()),
           debugShowCheckedModeBanner: false,
           title: 'Ok App',
-          home: const DownloadPdfScreen());
+          home: const Spalsh1());
     });
   }
 }
