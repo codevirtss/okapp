@@ -44,7 +44,7 @@ class PrimaryButton extends StatelessWidget {
       ),
       style: ElevatedButton.styleFrom(
           elevation: 1,
-          padding: EdgeInsets.symmetric(horizontal: 6.0.w, vertical: 1.5.h),
+          padding: EdgeInsets.symmetric(horizontal: 6.0.w, vertical: 2.h),
           primary: Kolors.primaryRed,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(3.2.w)))),

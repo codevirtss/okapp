@@ -18,18 +18,15 @@ class _ReportEventScreenState extends State<ReportEventScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(1.h),
-          child: KAppBar(title: 'Report Event'),
-        ),
         body: SafeArea(
           child: Container(
             height: 100.h,
             width: 100.w,
             child: Column(
               children: [
+                KAppBar(title: 'Report Event'),
                 SizedBox(
-                  height: 162,
+                  height: 18.0.h,
                 ),
                 Text(
                   "Scan a QR Code",

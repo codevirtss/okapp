@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class KAppBar extends StatelessWidget {
@@ -14,22 +15,30 @@ class KAppBar extends StatelessWidget {
         Expanded(
           child: Row(
             children: [
-              Container(
-                padding: EdgeInsets.all(12.0.sp),
-                margin:
-                    EdgeInsets.symmetric(horizontal: 3.0.w, vertical: 1.0.h),
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey, width: 0.2),
-                    borderRadius: BorderRadius.all(Radius.circular(15.0.sp)),
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(color: Colors.grey.shade300, blurRadius: 5)
-                    ]),
-                child: Icon(
-                  Icons.arrow_back,
-                  size: 20.0.sp,
-                  color: const Color(0xff666687),
+              GestureDetector(
+                onTap: () {
+                  Get.back();
+                },
+                child: Container(
+                  padding: EdgeInsets.all(12.0.sp),
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 3.0.w, vertical: 1.0.h),
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey, width: 0.2),
+                      borderRadius: BorderRadius.all(Radius.circular(15.0.sp)),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(color: Colors.grey.shade300, blurRadius: 5)
+                      ]),
+                  child: Icon(
+                    Icons.arrow_back,
+                    size: 20.0.sp,
+                    color: const Color(0xff666687),
+                  ),
                 ),
+              ),
+              SizedBox(
+                width: 2.0.w,
               ),
               Expanded(
                 child: Text(

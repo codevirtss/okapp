@@ -1,6 +1,8 @@
 import 'dart:developer';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:okapp/Screens/VehicleNumber.dart';
 import 'package:okapp/Utils/Colors.dart';
 import 'package:okapp/Utils/KAppBar.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -26,7 +28,7 @@ class MainPage extends StatelessWidget {
                   color: Colors.grey.shade400.withOpacity(0.4),
                   borderRadius: BorderRadius.all(Radius.circular(10))),
               height: 1.h,
-              width: 34.0.w,
+              width: 30.0.w,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -35,7 +37,7 @@ class MainPage extends StatelessWidget {
                         color: Kolors.primaryRed,
                         borderRadius: BorderRadius.all(Radius.circular(10))),
                     height: 1.h,
-                    width: 17.0.w,
+                    width: 15.0.w,
                   ),
                 ],
               ),
@@ -59,17 +61,37 @@ class MainPage extends StatelessWidget {
                 fontWeight: FontWeight.w700),
             textAlign: TextAlign.center,
           ),
+          kSizedBox(),
           SizedBox(
-            height: 15.0.h,
+            height: 35.0.h,
           ),
-          PrimaryButton(
-            icon: Icons.call,
-            isIcon: false,
-            onPressed: () {
-              log("Hello Yes", name: "Log");
-            },
-            title: "Connect",
-          )
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 5.0.w),
+            child: Row(
+              children: [
+                Expanded(
+                  child: PrimaryButton(
+                    isIcon: false,
+                    onPressed: () {
+                      Get.to(const VehicleNumber());
+                      log("Hello Yes", name: "Log");
+                    },
+                    title: "Proceed",
+                  ),
+                ),
+              ],
+            ),
+          ),
+          kSizedBox(),
+          kSizedBox(),
+          Text(
+            "By continuing, I agree to the Terms of Use &\nPrivacy Policy",
+            style: TextStyle(
+                color: Kolors.primaryGrey,
+                fontSize: 14.5.sp,
+                fontWeight: FontWeight.w500),
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );
