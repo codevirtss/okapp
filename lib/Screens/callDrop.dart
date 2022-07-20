@@ -78,7 +78,7 @@ click below to reconnect
                   SizedBox(
                     height: 66,
                   ),
-                    Icon(
+                  Icon(
                     Icons.cancel_outlined,
                     color: Kolors.primaryRed,
                     size: 30.sp,
