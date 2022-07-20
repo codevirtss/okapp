@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:okapp/Screens/reportCaller.dart';
+import 'package:okapp/Screens/reportMsg.dart';
 import 'package:okapp/Utils/Colors.dart';
 import 'package:okapp/Utils/DashRect.dart';
 import 'package:okapp/Utils/KAppBar.dart';
@@ -27,7 +28,7 @@ class _ReportEventScreenState extends State<ReportEventScreen> {
               children: [
                 const KAppBar(title: "Report Event"),
                 SizedBox(
-                  height: 162,
+                  height: 18.0.h,
                 ),
                 Text(
                   "Scan a QR Code",
@@ -160,29 +161,37 @@ class _ReportEventScreenState extends State<ReportEventScreen> {
                       color: Color(0xffFFFFFF),
                       border: Border.all(color: Kolors.primaryGrey),
                       borderRadius: BorderRadius.circular(10.px)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        width: 24,
-                      ),
-                      Icon(
-                        Icons.image_outlined,
-                        color: Colors.black,
-                        size: 30.px,
-                      ),
-                      SizedBox(
-                        width: 21,
-                      ),
-                      Text(
-                        "Report a message",
-                        style: GoogleFonts.dmSans(
-                          fontSize: 12.px,
-                          color: Kolors.primaryRed,
-                          fontWeight: FontWeight.w700,
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ReportMsg()));
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 24,
                         ),
-                      )
-                    ],
+                        Icon(
+                          Icons.image_outlined,
+                          color: Colors.black,
+                          size: 30.px,
+                        ),
+                        SizedBox(
+                          width: 21,
+                        ),
+                        Text(
+                          "Report a message",
+                          style: GoogleFonts.dmSans(
+                            fontSize: 12.px,
+                            color: Kolors.primaryRed,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],

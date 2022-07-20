@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:flutter/material.dart';
 import 'package:okapp/Utils/Colors.dart';
@@ -26,11 +26,13 @@ class MainButton extends StatelessWidget {
       child: Container(
         height: 30.sp,
         width: 72.sp,
-        child: Text("$title",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w700,
-                fontSize: 16.0.sp),
+        child: Center(
+          child: Text("$title",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16.0.sp),
+          ),
         ),
         decoration: BoxDecoration(
           color: Kolors.primaryRed,
