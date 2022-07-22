@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:okapp/Screens/reportEvent.dart';
 import 'package:okapp/Utils/Colors.dart';
 import 'package:okapp/Utils/KAppBar.dart';
 import 'package:okapp/Utils/PrimaryButton.dart';
@@ -123,9 +125,7 @@ class _VehicleNumberState extends State<VehicleNumber> {
                 PrimaryButton(
                   isIcon: false,
                   onPressed: () {
-                    setState(() {
-                      _vehcileFound = true;
-                    });
+                    Get.to(ReportEventScreen());
                   },
                   title: "Try Again",
                 )

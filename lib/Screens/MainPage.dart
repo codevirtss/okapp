@@ -62,8 +62,134 @@ class MainPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           kSizedBox(),
+          kSizedBox(),
+          // SizedBox(
+          //   height: 35.0.h,
+          // ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey, width: 0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0.sp)),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(color: Colors.grey.shade300, blurRadius: 1)
+                    ]),
+                child: Center(
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 23.0.sp,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff4A4A6A)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      errorBorder: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      disabledBorder: InputBorder.none,
+                      focusedErrorBorder: InputBorder.none,
+                      alignLabelWithHint: false,
+                    ),
+                  ),
+                ),
+                height: 9.h,
+                width: 9.0.h,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey, width: 0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0.sp)),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(color: Colors.grey.shade300, blurRadius: 1)
+                    ]),
+                child: Center(
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 23.0.sp,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff4A4A6A)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      errorBorder: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      disabledBorder: InputBorder.none,
+                      focusedErrorBorder: InputBorder.none,
+                      alignLabelWithHint: false,
+                    ),
+                  ),
+                ),
+                height: 9.h,
+                width: 9.0.h,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey, width: 0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0.sp)),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(color: Colors.grey.shade300, blurRadius: 1)
+                    ]),
+                child: Center(
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 23.0.sp,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff4A4A6A)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      errorBorder: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      disabledBorder: InputBorder.none,
+                      focusedErrorBorder: InputBorder.none,
+                      alignLabelWithHint: false,
+                    ),
+                  ),
+                ),
+                height: 9.h,
+                width: 9.0.h,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey, width: 0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0.sp)),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(color: Colors.grey.shade300, blurRadius: 1)
+                    ]),
+                child: Center(
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 23.0.sp,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff4A4A6A)),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      errorBorder: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      disabledBorder: InputBorder.none,
+                      focusedErrorBorder: InputBorder.none,
+                      alignLabelWithHint: false,
+                    ),
+                  ),
+                ),
+                height: 9.h,
+                width: 9.0.h,
+              ),
+            ],
+          ),
+          kSizedBox(),
           SizedBox(
-            height: 35.0.h,
+            height: 25.0.h,
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5.0.w),

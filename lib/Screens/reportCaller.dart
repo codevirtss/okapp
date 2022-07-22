@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:okapp/Screens/reportMsg.dart';
 import 'package:okapp/Utils/Colors.dart';
 import 'package:okapp/Utils/KAppBar.dart';
 import 'package:okapp/Utils/MainButton.dart';
@@ -63,7 +65,9 @@ an event related to a caller.
             ),
             MainButton(
               isIcon: false,
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const ReportMsg());
+              },
               title: "Submit",
             )
           ],

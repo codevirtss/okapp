@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ndialog/ndialog.dart';
+import 'package:okapp/Screens/OffersScreen.dart';
 import 'package:okapp/Utils/Colors.dart';
 import 'package:okapp/Utils/KAppBar.dart';
 import 'package:okapp/Utils/MainButton.dart';
+import 'package:okapp/Utils/PrimaryButton.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+
+import '../Utils/ConstantMethods.dart';
 
 class DownloadPdfScreen extends StatelessWidget {
   const DownloadPdfScreen({Key? key}) : super(key: key);
@@ -35,9 +41,7 @@ class DownloadPdfScreen extends StatelessWidget {
                 height: 23,
               ),
               Text(
-                """Use this ID inside your wallet or on
-the back of your mobile phone
-""",
+                "Use this ID inside your wallet or on\nthe back of your mobile phone",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Kolors.primaryGrey,
@@ -80,7 +84,14 @@ Privacy Policy
                     fontWeight: FontWeight.w400,
                     fontSize: 14.px),
               ),
-              MainButton(isIcon: false, onPressed: () {}, title: "Download")
+              MainButton(
+                  isIcon: false,
+                  onPressed: () async {
+                    await showKDialog(context, "Confirm End Reporting", () {
+                      Get.to(const OffersScreen());
+                    }).show(context);
+                  },
+                  title: "Download"),
             ],
           ),
         ),
